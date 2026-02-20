@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "District 1",
+        "area": 150.5,
+        "population": 50000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.3, 23.8],
+            [90.4, 23.8],
+            [90.4, 23.7],
+            [90.3, 23.7],
+            [90.3, 23.8]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "District 2",
+        "area": 200.25,
+        "population": 75000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.35, 23.65],
+            [90.45, 23.65],
+            [90.45, 23.55],
+            [90.35, 23.55],
+            [90.35, 23.65]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Point of Interest",
+        "type": "landmark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.36, 23.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Road Network",
+        "length": 50.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [90.32, 23.72],
+          [90.35, 23.71],
+          [90.38, 23.70]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "gis-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@turf/bbox": "^6.5.0",
+    "@turf/simplify": "^6.5.0",
+    "leaflet": "^1.9.4",
+    "proj4": "^2.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-leaflet": "^4.2.1",
+    "shapefile": "^0.6.6",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
