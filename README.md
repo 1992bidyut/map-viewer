@@ -181,3 +181,51 @@ gis-viewer/
 | Zustand | Global state management |
 | react-dropzone | File drag & drop |
 | nginx | Production static file server |
+
+---
+
+## Auto Git Workflow
+
+An automated process to detect changes, generate commit messages, and push to remote in a single command.
+
+### Quick Prompts to Trigger the Process
+
+Use **any** of these prompts:
+- `"Auto commit and push"`
+- `"Auto git workflow"`
+- `"Run auto commit"`
+- `"Execute auto git process"`
+
+### Process Steps
+
+1. **Detect Changes** — Scans the repository for all modified, staged, and new files
+2. **Analyze Changes** — Reviews file diffs to determine the nature of changes (feature, fix, docs, etc.)
+3. **Generate Commit Message** — Creates a meaningful, descriptive commit message based on analysis
+4. **Auto-Stage Files** — Runs `git add .` to stage all changes
+5. **Auto-Commit** — Commits with the generated message
+6. **Auto-Push** — Pushes commits to the remote branch
+
+### Example Output
+
+```
+✅ Process Complete!
+
+Step 1: Auto-detected Changes — Found 5 modified files
+Step 2: Generated Commit Message — "feat: add layer filtering UI"
+Step 3: Auto-committed — 5 files changed, 142 insertions(+)
+Step 4: Auto-pushed — Pushed to remote branch 'main'
+```
+
+### When to Use
+
+- After making code changes and want to commit quickly
+- When you want meaningful commit messages without manual typing
+- During iterative development cycles
+- Before taking breaks to save progress
+
+### Notes
+
+- Commit messages follow conventional commits format (`feat:`, `fix:`, `docs:`, etc.)
+- All changed files are automatically staged and committed together
+- Push happens immediately after commit
+- No manual git commands needed
