@@ -47,9 +47,9 @@ export default function MapView({ fitLayerRef }) {
   const { layers, settings, setSelectedFeature, setHoverFeature } = useStore();
   const lastUploadedLayerId = useStore(s => s.lastUploadedLayerId);
 
-  // Replace these with your provided keys (user supplied)
-  const GOOGLE_MAP_KEY = 'AIzaSyBWpNXpQGlRt0iviiNYWMIUA8OdCUn8LEY'.replace('AIzaSyBWpN','AIzaSyBWpN');
-  const GOOGLE_MAP_ID = '2098ea76af8d3007';
+  // Load keys from environment variables
+  const GOOGLE_MAP_KEY = process.env.REACT_APP_GOOGLE_MAP_KEY;
+  const GOOGLE_MAP_ID = process.env.REACT_APP_GOOGLE_MAP_ID;
 
   // Initialize Google Maps
   useEffect(() => {
